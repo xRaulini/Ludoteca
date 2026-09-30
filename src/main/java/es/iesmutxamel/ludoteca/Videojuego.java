@@ -1,8 +1,7 @@
 package es.iesmutxamel.ludoteca;
 
 public class Videojuego {
-
-
+    private int id;
     private String titulo;
     private String plataforma;
     private double precio;
@@ -10,21 +9,18 @@ public class Videojuego {
 
     // Constructor
     public Videojuego(int id, String titulo, String plataforma, double precio, int stock) {
-        this.Id = Id;
+        this.id = id;
         this.titulo = titulo;
         this.plataforma = plataforma;
         this.precio = precio;
         this.stock = stock;
     }
-
-    private int Id;
-
     public int getId() {
-        return Id;
+        return id;
     }
 
     public void setId(int id) {
-        Id = id;
+        id = id;
     }
 
     public String getTitulo() {
@@ -61,7 +57,7 @@ public class Videojuego {
 
     @Override
     public String toString() {
-        return "ID: " + Id + " | " + "Titulo: " + titulo + " | " + "Plataforma: " + plataforma + " | " + "Precio: " +
+        return "ID: " + id + " | " + "Titulo: " + titulo + " | " + "Plataforma: " + plataforma + " | " + "Precio: " +
                 precio + "€ | " + "Stock: " + stock;
     }
 }
