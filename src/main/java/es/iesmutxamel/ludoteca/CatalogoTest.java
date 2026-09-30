@@ -1,16 +1,15 @@
 package es.iesmutxamel.ludoteca;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
 public class CatalogoTest {
 
     private Catalogo catalogo;
 
-    @BeforeEach
+    @Before
     public void preparar() {
         catalogo = new Catalogo();
     }
