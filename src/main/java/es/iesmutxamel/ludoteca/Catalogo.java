@@ -16,6 +16,8 @@ public class Catalogo {
         if (buscarPorId(videojuego.getId()) != null) {
             return false;
         }
+
+        videojuegos.add(videojuego);
         return true;
     }
 
